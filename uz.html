@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8" />
+    <!-- <base href="/"> -->
+
+    <title>Broyler Farm</title>
+    <meta name="description" content="" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+    <!-- Template Basic Images Start -->
+    <meta property="og:image" content="path/to/image.jpg" />
+    <link rel="icon" href="img/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png" />
+    <!-- Template Basic Images End -->
+
+    <!-- Custom Browsers Color Start -->
+    <meta name="theme-color" content="#000" />
+    <!-- Custom Browsers Color End -->
+
+    <!-- Main Style -->
+    <link rel="icon" type="image/x-icon" href="img/Favicon Broyler.png" />
+    <link rel="stylesheet" href="css/main.min.css" />
+
+</head>
+
+<body>
+    <script>
+        (function(w, d, s, h, id) {
+            w.roistatProjectId = id;
+            w.roistatHost = h;
+            var p = d.location.protocol == "https:" ? "https://" : "http://";
+            var u = /^.*roistat_visit=[^;]+(.*)?$/.test(d.cookie) ? "/dist/module.js" : "/api/site/1.0/" + id + "/init?referrer=" + encodeURIComponent(d.location.href);
+            var js = d.createElement(s);
+            js.charset = "UTF-8";
+            js.async = 1;
+            js.src = p + h + u;
+            var js2 = d.getElementsByTagName(s)[0];
+            js2.parentNode.insertBefore(js, js2);
+        })(window, document, 'script', 'cloud.roistat.com', 'a6f3ee2f8a4ea24df0f67905bd3dc2c4');
+    </script>
+    <div>
+        <div id="header" class="header">
+            <div class="navbar">
+                <div class="container">
+                    <div class="row block">
+                        <div class="navbar_logo">
+                            <div class="navbar_logo__title">Broyler <span>Farm</span></div>
+                            <div class="navbar_logo__subtitle">Бройлер товуқлари учун ем озуқаси</div>
+                        </div>
+
+                        <div class="navbar__burger">
+                            <span></span>
+                        </div>
+
+                        <ul class="navbar_menu">
+                            <li class="navbar_menu__item">
+                                <a href="#product">Бизнинг махсулот</a>
+                            </li>
+                            <li class="navbar_menu__item">
+                                <a href="#ingridients">Таркиби</a>
+                            </li>
+                            <li class="navbar_menu__item">
+                                <a href="#progress-app"> Компания</a>
+                            </li>
+                            <li class="navbar_menu__item">
+                                <a href="#howorks">Қандай ишлаймиз</a>
+                            </li>
+                            <li class="navbar_menu__item">
+                                <a href="#quesions">Саволлар</a>
+                            </li>
+                        </ul>
+
+                        <div class="navbar_details">
+                            <div class="language">
+                                <div class="language_main language_item">
+                                    <a href="uz.html">Ўзб</a>
+                                    <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.41502 7L-2.47591e-07 5.66422L6 2.62268e-07L12 5.66422L10.585 7L6 2.67161L1.41502 7Z" fill="#212121"/>
+                                    </svg>
+                                </div>
+                                <div class="language_wrap">
+                                    <div class="language_other language_item">
+                                        <a href="index.html">Рус</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="tel:+998944905011" class="phone">
+                                <div class="phone_icon">
+                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.5707 8.70285C10.904 8.70285 10.2494 8.59858 9.62915 8.39359C9.3252 8.28992 8.95155 8.38503 8.76604 8.57556L7.54169 9.49981C6.1218 8.74187 5.24718 7.86753 4.49959 6.45829L5.39664 5.26585C5.62971 5.0331 5.7133 4.6931 5.61315 4.37409C5.40728 3.75053 5.3027 3.09626 5.3027 2.42932C5.30273 1.94751 4.91076 1.55554 4.42898 1.55554H2.42929C1.94751 1.55554 1.55554 1.94751 1.55554 2.42929C1.55554 7.95172 6.04827 12.4444 11.5707 12.4444C12.0525 12.4444 12.4444 12.0525 12.4444 11.5707V9.57657C12.4444 9.09482 12.0524 8.70285 11.5707 8.70285Z" fill="white"/>
+                                    </svg>
+                                </div>
+                                <div class="phone_number">+998 94 490-5011</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="intro posr">
+                <img class="intro_tree" src="img/intro_tree.svg" alt="" />
+                <img class="intro_clouds" src="img/header_clouds.svg" alt="" />
+                <div class="container posr">
+                    <img class="intro_pic" src="img/hen_chicken.svg" alt="" />
+                    <div class="row">
+                        <div class="col-lg-4 posr ">
+                            <img class="intro_leave" src="img/header_leaves.svg" alt="" />
+                            <div class="intro_card-frame">
+                                <div class="card">
+                                    <div class="card_item">
+                                        <div class="card_item__img">
+                                            <img src="img/car.svg" alt="icon" />
+                                        </div>
+                                        <div class="card_item__title">
+                                            Бепул етказиб бериш
+                                        </div>
+                                        <div class="card_item__content">
+                                            Сиз учун 5 тоннадан ортиқ бўлган буюртмангизни Ўзбекистон бўйлаб бепул етказиб берамиз
+                                        </div>
+                                    </div>
+
+                                    <div class="card_item">
+                                        <div class="card_item__img">
+                                            <img src="img/technics.svg" alt="icon" />
+                                        </div>
+                                        <div class="card_item__title">
+                                            Ишлаб чиқариш
+                                        </div>
+                                        <div class="card_item__content">
+                                            Сиз учун кунига 350 тоннагача бўлган ем махсулотларини ишлаб чиқарамиз
+                                        </div>
+                                    </div>
+
+                                    <div class="card_item">
+                                        <div class="card_item__img">
+                                            <img src="img/weed.svg" alt="icon" />
+                                        </div>
+                                        <div class="card_item__title">
+                                            Табиий махсулотлар
+                                        </div>
+                                        <div class="card_item__content">
+                                            Сизнинг бройлерлариз учун фақат табиий тоза махсулот ишлатамиз
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-8 ">
+                            <div class="intro_content">
+                                <div class="intro_content__title">Комбикорм</div>
+                                <div class="intro_content__subtitle">
+                                    Бройлер товуқлари учун <br> ем озуқаси
+                                </div>
+                                <div class="intro_content__text">
+                                    Бройлер товуқлари учун ишлаб чиқарувчидан ем озуқасига буюртма беринг ва <span>40 кун ичида 4 кг гача товуқ гўштини олинг</span>
+                                </div>
+                                <button class="btn intro_content__button btn-green">
+                                    <img src="img/flour_button.svg" alt="" />
+                                    БЕпул намунага буюртма бериш
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="product" class="product">
+            <div class="container">
+                <div class="product__title">
+                    <h3>Бизнинг махсулот
+                    </h3>
+                </div>
+                <div class="card-wrap">
+                    <div class="product-card">
+                        <div class="product-card__image">
+                            <img src="img/corn_1.png" alt="corn" />
+                        </div>
+                        <div class="product-card__content">
+                            <div class="product-card--wrap">
+                                <h5 class="product-card__title">СТАРТ</h5>
+                                <h3 class="product-card__subtitle">СТАРТ</h3>
+                            </div>
+                            <p class="product-card__text">
+                                Старт еми <br><span class="black">1-14 суткагача бўлган</span><br><span>бройлерлар учун мўлжалланган</span>
+                            </p>
+                            <button class="btn btn-green product-card__button">
+                                БЕпул намунага буюртма бериш
+                </button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-card__image">
+                            <img src="img/corn_2.png" alt="corn" />
+                        </div>
+                        <div class="product-card__content">
+                            <div class="product-card--wrap">
+                                <h5 class="product-card__title">РОСТ</h5>
+                                <h3 class="product-card__subtitle">РОСТ</h3>
+                            </div>
+                            <p class="product-card__text">
+                                Рост еми<br> <span class="black">15-28 суткагача бўлган</span> <br> <span>бройлерлар учун мўлжалланган</span>
+                            </p>
+                            <button class="btn btn-green product-card__button">
+                                БЕпул намунага буюртма бериш
+                </button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-card__image">
+                            <img src="img/corn_3.png" alt="corn" />
+                        </div>
+                        <div class="product-card__content">
+                            <div class="product-card--wrap">
+                                <h3 class="product-card__title">ФИНИШ</h3>
+                                <h5 class="product-card__subtitle">ФИНИШ</h5>
+                            </div>
+                            <p class="product-card__text">Финиш еми <br><span class="black">29-40 суткагача бўлган</span> <br> <span>бройлерлар учун мўлжалланган</span>
+                            </p>
+                            <button class="btn btn-green product-card__button">
+                                БЕпул намунага буюртма бериш
+                </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="ingridients" class="ingredient">
+            <img class="ingredient-meat" src="img/ingredient_meat.svg" alt="" />
+            <img class="ingredient-leave" src="img/ingredient_leave.svg" alt="" />
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 d-flex justify-content-center">
+                        <div class="ingredient-title">
+                            <h2 class="ingredient-title__name">
+                                Ем озуқасида ишлатиладиган махсулотлар
+                            </h2>
+                            <button class="btn btn-green ing-desk ingredient-title__btn">
+                                <img src="img/flour_button.svg" alt="" />
+                                БЕпул намунага буюртма бериш
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="ingredient-card--wrap">
+                            <div class="ingredient-card">
+                                <div class="ingredient-card__image">
+                                    <img src="img/ingredient_1.svg" alt="ingredient" />
+                                </div>
+                                <h3 class="ingredient-card__title">Буғдой</h3>
+                            </div>
+
+                            <div class="ingredient-card">
+                                <div class="ingredient-card__image">
+                                    <img src="img/ingredient_2.svg" alt="ingredient" />
+                                </div>
+                                <h3 class="ingredient-card__title">Жўхори</h3>
+                            </div>
+
+                            <div class="ingredient-card">
+                                <div class="ingredient-card__image">
+                                    <img src="img/ingredient_3.svg" alt="ingredient" />
+                                </div>
+                                <h3 class="ingredient-card__title">Писта ёғи</h3>
+                            </div>
+
+                            <div class="ingredient-card">
+                                <div class="ingredient-card__image">
+                                    <img src="img/ingredient_4.svg" alt="ingredient" />
+                                </div>
+                                <h3 class="ingredient-card__title">Соя</h3>
+                            </div>
+
+                            <div class="ingredient-card">
+                                <div class="ingredient-card__image">
+                                    <img src="img/ingredient_5.svg" alt="ingredient" />
+                                </div>
+                                <h3 class="ingredient-card__title">Премикс витаминлари</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn btn-green ing-mob ingredient-title__btn">
+                        <img src="img/flour_button.svg" alt="" />
+                        БЕпул намунага буюртма бериш
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="application">
+            <img src="img/application_hen.svg" alt="" class="application_hen" />
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="application-content">
+                            <h1 class="application-content__title">Бепул намунага</h1>
+                            <h3 class="application-content__subtitle">
+                                эга бўлиш учун формани тўлдиринг
+                            </h3>
+                            <div class="application-content__text"> БЕпул намуна
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="application-form">
+                            <div class="application-form__input">
+                                <input id="name-input" placeholder="Исм ва Фамилия" type="text" />
+                            </div>
+                            <div class="application-form__input">
+                                <input id="number-input" placeholder="Телефон рақами ёки Email" type="text" />
+                            </div>
+                            <button class="btn btn-red application-form__btn">буюртма жўнатиш</button>
+                            <div class="application-form__agreement">
+                                <input id="agreement" type="checkbox" />
+                                <label for="agreement">Мен келишилган <span>оферта шартномаси</span>га розилигимни билдираман</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="progress" id="progress-app">
+            <div class="container">
+                <div class="progress-header">
+                    <h1 class="progress-header__title">
+                        Компаниянинг ривожланиш босқичлари
+                    </h1>
+                    <div class="progress-header__txt" v-for="year in years " :key="year.value " v-if="activeValue === year.value">
+                        <h4>{{ year.yearuz }}</h4>
+                        <p>{{ year.infouz }}</p>
+                    </div>
+                    <div class="progress-body progress__mob ">
+                        <div class="progress-range">
+                            <div v-for="year in years " :key="year.value " class="progress-range-item " :class="{ 'progress-range-item--active': activeValue>= year.value }">
+                                <div class="progress-range-item__year">{{ year.yearuz }}</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-header__btn ">
+                        <button class="btn-red " :disabled="activeValue===0 " id="progress-prev " @click="activeValue=activeValue===0 ? 0 : activeValue - 1 ">
+                            <svg
+                                width="10 "
+                                height="16 "
+                                viewBox="0 0 10 16 "
+                                fill="none "
+                                xmlns="http://www.w3.org/2000/svg ">
+                                <path d="M9.36652 2.40542L7.71573 0.715821L0.715759 7.88013L7.71573 15.0444L9.36652 13.3548L4.01739 7.88013L9.36652 2.40542Z "fill="white "/>
+                            </svg>
+                        </button>
+                        <button class="btn-red " :disabled="activeValue===years.length " id="progress-next " @click="activeValue=activeValue===years.length?activeValue:activeValue + 1 ">
+                            <svg
+                                width="10 "
+                                height="16 "
+                                viewBox="0 0 10 16 "
+                                fill="none "
+                                xmlns="http://www.w3.org/2000/svg ">
+                                <path d="M0.715759 2.40542L2.36655 0.715821L9.36652 7.88013L2.36655 15.0444L0.71576 13.3548L6.06488 7.88013L0.715759 2.40542Z "fill="white "/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="progress-body progress__desk ">
+                    <div class="progress-range ">
+                        <div v-for="year in years " :key="year.value " class="progress-range-item " :class="{ 'progress-range-item--active': activeValue>= year.value }">
+                            <div class="progress-range-item__year">{{ year.yearuz }}</div>
+                            <div class="progress-range-item__info" :class="{ 'progress-range-item__info--active': activeValue === year.value }">
+                                <h4>{{ year.yearuz }}</h4>
+                                <p>{{ year.infouz }}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="founder ">
+            <img src="img/founder_clouds.png " alt=" " class="founder__clouds ">
+            <img src="img/list1 4.png " class="elem-1 " alt=" ">
+            <img src="img/List 5.png " class="elem-2 " alt=" ">
+            <div class="container ">
+                <div class="founder__title ">
+                    Компания раҳбари
+                </div>
+                <div class="swiper-container founder-slider ">
+                    <div class="swiper-wrapper flex-nowrap ">
+                        <div class="swiper-slide person ">
+                            <div class="person__img col-lg-7 ">
+                                <img src="img/Rectangle 583.png " alt="founder ">
+                            </div>
+                            <div class="person-info col-lg-4 ">
+                                <h2 class="person__name ">
+                                    УЛУҒБЕК ЖАЛОЛОВ
+                                </h2>
+                                <div class="person__position ">
+                                    Таъсисчи
+                                </div>
+                                <p class="person__exp ">
+                                    5 йилдан ортиқ иш тажрибаси
+                                </p>
+                                <a href="# " class="person__link btn-blue ">
+                                    <svg width="24 " height="20 " viewBox="0 0 24 20 " fill="none " xmlns="http://www.w3.org/2000/svg ">
+                                        <path d="M9.41701 13.1809L9.02001 18.7649C9.58801 18.7649 9.83401 18.5209 10.129 18.2279L12.792 15.6829L18.31 19.7239C19.322 20.2879 20.035 19.9909 20.308 18.7929L23.93 1.82092L23.931 1.81992C24.252 0.323917 23.39
+                                -0.261083 22.404 0.105917L1.11401 8.25692C-0.33899 8.82092 -0.31699 9.63092 0.86701 9.99792L6.31001 11.6909L18.953 3.77992C19.548 3.38592 20.089 3.60392 19.644 3.99792L9.41701 13.1809Z " fill="white "/>
+                                    </svg> Телеграм орқали боғланиш
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide person ">
+                            <div class="person__img col-lg-7 ">
+                                <img src="img/Rectangle 583.png " alt="founder ">
+                            </div>
+                            <div class="person-info col-lg-4 ">
+                                <h2 class="person__name ">
+                                    УЛУҒБЕК ЖАЛОЛОВ
+                                </h2>
+                                <div class="person__position ">
+                                    Таъсисчи
+                                </div>
+                                <p class="person__exp ">
+                                    5 йилдан ортиқ иш тажрибаси
+                                </p>
+                                <a href="# " class="person__link btn-blue ">
+                                    <svg width="24 " height="20 " viewBox="0 0 24 20 " fill="none " xmlns="http://www.w3.org/2000/svg ">
+                                        <path d="M9.41701 13.1809L9.02001 18.7649C9.58801 18.7649 9.83401 18.5209 10.129 18.2279L12.792 15.6829L18.31 19.7239C19.322 20.2879 20.035 19.9909 20.308 18.7929L23.93 1.82092L23.931 1.81992C24.252 0.323917 23.39
+                                -0.261083 22.404 0.105917L1.11401 8.25692C-0.33899 8.82092 -0.31699 9.63092 0.86701 9.99792L6.31001 11.6909L18.953 3.77992C19.548 3.38592 20.089 3.60392 19.644 3.99792L9.41701 13.1809Z " fill="white "/>
+                                    </svg> Телеграм орқали боғланиш
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide person ">
+                            <div class="person__img col-lg-7 ">
+                                <img src="img/Rectangle 583.png " alt="founder ">
+                            </div>
+                            <div class="person-info col-lg-4 ">
+                                <h2 class="person__name ">
+                                    УЛУҒБЕК ЖАЛОЛОВ
+                                </h2>
+                                <div class="person__position ">
+                                    Таъсисчи
+                                </div>
+                                <p class="person__exp ">
+                                    5 йилдан ортиқ иш тажрибаси
+                                </p>
+                                <a href="# " class="person__link btn-blue ">
+                                    <svg width="24 " height="20 " viewBox="0 0 24 20 " fill="none " xmlns="http://www.w3.org/2000/svg ">
+                                        <path d="M9.41701 13.1809L9.02001 18.7649C9.58801 18.7649 9.83401 18.5209 10.129 18.2279L12.792 15.6829L18.31 19.7239C19.322 20.2879 20.035 19.9909 20.308 18.7929L23.93 1.82092L23.931 1.81992C24.252 0.323917 23.39
+                                -0.261083 22.404 0.105917L1.11401 8.25692C-0.33899 8.82092 -0.31699 9.63092 0.86701 9.99792L6.31001 11.6909L18.953 3.77992C19.548 3.38592 20.089 3.60392 19.644 3.99792L9.41701 13.1809Z " fill="white "/>
+                                    </svg> Телеграм орқали боғланиш
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-details ">
+                    <div class="swiper-pagination "></div>
+                    <div class="swiper-arrows ">
+                        <button class="btn-red swiper-prev " :disabled="activeValue===0 " id="progress-prev " @click="activeValue=a ctiveValue===0 ? 0 : activeValue - 1 ">
+                <svg
+                  width="10 "
+                  height="16 "
+                  viewBox="0 0 10 16 "
+                  fill="none "
+                  xmlns="http://www.w3.org/2000/svg "
+                >
+                  <path
+                    d="M9.36652 2.40542L7.71573 0.715821L0.715759 7.88013L7.71573 15.0444L9.36652 13.3548L4.01739 7.88013L9.36652 2.40542Z "
+                    fill="white "
+                  />
+                </svg>
+              </button>
+                        <button class="btn-red swiper-next " :disabled="activeValue===y ears.length " id="progress-next " @click="activeValue=a ctiveValue===y ears.length ? activeValue : activeValue + 1 ">
+                <svg
+                  width="10 "
+                  height="16 "
+                  viewBox="0 0 10 16 "
+                  fill="none "
+                  xmlns="http://www.w3.org/2000/svg "
+                >
+                  <path
+                    d="M0.715759 2.40542L2.36655 0.715821L9.36652 7.88013L2.36655 15.0444L0.71576 13.3548L6.06488 7.88013L0.715759 2.40542Z "
+                    fill="white "
+                  />
+                </svg>
+              </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="applicationSecond container ">
+            <img src="img/List 6.png " class="elem-1 " alt=" ">
+            <div class="container ">
+                <div class="col ">
+                    <div class="applicationSecond-content ">
+                        <div class="applicationSecond-content__title ">
+                            <span>Индивидуал рецептда</span> бройлер учун ем озуқасини буюртма бериш учун формани тўлдиринг
+                        </div>
+                    </div>
+                </div>
+                <div class="col ">
+                    <div class="application-form row ">
+                        <div class="application-form__input col-xl col-12 ">
+                            <input id="name-input-2" placeholder="Исм ва Фамилия" type="text" />
+                        </div>
+                        <div class="application-form__input col-xl col-12 ">
+                            <input id="number-input-2" placeholder="Телефон рақами ёки Email" type="text" />
+                        </div>
+                        <button class="btn btn-red application-form__btn col-12 col-xl-3 ">буюртма жўнатиш</button>
+                        <div class="application-form__agreement col-12 ">
+                            <input id="agreement" type="checkbox" />
+                            <label for="agreement">Мен келишилган <span>оферта шартномаси</span>га розилигимни билдираман</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="howorks" class="howitworks ">
+            <div class="container ">
+                <div class="howitworks__title ">Биз қандай <br> ишлаймиз</div>
+                <div class="howitworks__wrapper ">
+                    <ul class="left ">
+                        <li>
+                            <img src="img/Group 23.png " alt=" ">
+                            <div class="howitworks__wrapper__text ">Сайт орқали мурожаат қиласиз</div>
+                        </li>
+                        <li>
+                            <img src="img/Group 24.png " alt=" ">
+                            <div class="howitworks__wrapper__text ">Менежиримиз сиз билан боғланишади</div>
+                        </li>
+                        <li>
+                            <img src="img/Group 26.png " alt=" ">
+                            <div class="howitworks__wrapper__text ">Сизга бепул намуна жўнатамиз</div>
+                        </li>
+                    </ul>
+                    <ul class="right ">
+                        <li>
+                            <img src="img/Group 27.png " alt=" ">
+                            <div class="howitworks__wrapper__text ">3 кун ичида складингизга бепул етқазиб берамиз</div>
+                        </li>
+                        <li>
+                            <img src="img/Group 28.png " alt=" ">
+                            <div class="howitworks__wrapper__text ">Сиз тшловн амалга оширасиз</div>
+                        </li>
+                        <li>
+                            <img src="img/Group 29.png " alt=" ">
+                            <div class="howitworks__wrapper__text ">Шартнома жўнатамиз</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="quesions" class="questions ">
+            <div class="container ">
+                <div class="questions__title ">Кўп бериладиган саворллар</div>
+
+                <button class="accordion ">
+                      В этом блоке мы рекомендуем разместить информацию о Вашей организации?
+                    </button>
+                <div class="panel ">
+                    <p>Примечание. Обращаем Ваше внимание, что текстовая информация на сайте должна быть индивидуальной, не скопированной с других интернет-ресурсов, о чем указано в рекомендациях Яндекса: «Мы стараемся не индексировать или не ранжировать
+                        высоко сайты, копирующие информацию с других ресурсов и не создающие оригинального контента или сервиса».</p>
+                </div>
+                <button class="accordion ">
+                      В этом блоке мы рекомендуем разместить информацию о Вашей организации?
+                    </button>
+                <div class="panel ">
+                    <p>Примечание. Обращаем Ваше внимание, что текстовая информация на сайте должна быть индивидуальной, не скопированной с других интернет-ресурсов, о чем указано в рекомендациях Яндекса: «Мы стараемся не индексировать или не ранжировать
+                        высоко сайты, копирующие информацию с других ресурсов и не создающие оригинального контента или сервиса».</p>
+                </div>
+                <button class="accordion ">
+                      В этом блоке мы рекомендуем разместить информацию о Вашей организации?
+                    </button>
+                <div class="panel ">
+                    <p>Примечание. Обращаем Ваше внимание, что текстовая информация на сайте должна быть индивидуальной, не скопированной с других интернет-ресурсов, о чем указано в рекомендациях Яндекса: «Мы стараемся не индексировать или не ранжировать
+                        высоко сайты, копирующие информацию с других ресурсов и не создающие оригинального контента или сервиса».</p>
+                </div>
+                <button class="accordion ">
+                      В этом блоке мы рекомендуем разместить информацию о Вашей организации?
+                    </button>
+                <div class="panel ">
+                    <p>Примечание. Обращаем Ваше внимание, что текстовая информация на сайте должна быть индивидуальной, не скопированной с других интернет-ресурсов, о чем указано в рекомендациях Яндекса: «Мы стараемся не индексировать или не ранжировать
+                        высоко сайты, копирующие информацию с других ресурсов и не создающие оригинального контента или сервиса».</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="getQuestions ">
+            <div class="container ">
+                <div class="col ">
+                    <div class="getQuestions__title ">Саволларингиз бўлса!</div>
+                    <div class="getQuestions__subtitle ">Сизда савол пайдо бўлдими ундай бўлса бизга ўз саволингизни йўлланг</div>
+
+                </div>
+                <div class="getQuestions__form d-lg-flex ">
+                    <div class="col-lg-5 ">
+                        <form class="text-area ">
+                            <textarea id="text-input-3" class="getQuestions__txt " placeholder="Савол беринг" type="text "></textarea>
+                        </form>
+                    </div>
+                    <div class="col-lg-6 ">
+                        <div class="application-form ">
+                            <div class="application-form__input ">
+                                <input id="name-input-3 " placeholder="Исм ва Фамилия" type="text " />
+                            </div>
+                            <div class="application-form__input ">
+                                <input id="number-input-3 " placeholder="Телефон рақами ёки Email" type="text " />
+                            </div>
+                            <button class="btn btn-red application-form__btn ">буюртма жўнатиш</button>
+                            <div class="application-form__agreement ">
+                                <input id="agreement" type="checkbox" />
+                                <label for="agreement">Мен келишилган <span>оферта шартномаси</span>га розилигимни билдираман</label>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="contacts ">
+            <img src="img/List 6.png " class="elem-1 " alt=" ">
+            <img src="img/List3.png " class="elem-2 " alt=" ">
+            <div class="container ">
+                <div class="row ">
+                    <div class="col-lg-4 ">
+                        <div class="contacts__title ">Телефон рақамларимиз:</div>
+                        <div class="contacts__subtitle ">+998 99 000-0000</div>
+                        <div class="contacts__subtitle ">+998 99 000-0000</div>
+                        <div class="contacts__title ">Бизнинг манзил:</div>
+                        <div class="contacts__subtitle ">100100, Узбекистон, Тошкент шахри, Муқумий кўчаси, 151, офис 711</div>
+                        <div class="contacts__title ">Email:</div>
+                        <div class="contacts__subtitle ">broyler@mail.ru</div>
+                        <div class="contacts__sci ">
+                            <ul class="sci ">
+                                <li>
+                                    <a href=" "><img alt=" " src="img/telegram.png "></a>
+                                </li>
+                                <li>
+                                    <a href=" "><img alt=" " src="img/facebook.png "></a>
+                                </li>
+                                <li>
+                                    <a href=" "><img alt=" " src="img/instagram.png "></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer ">
+            <div class="container ">
+                <div class="footer__items ">
+                    <div class="footer__items__copy ">Copyright © 2021 Broyler.uz
+                    </div>
+                    <div class="footer__items__materials ">
+                        Сайтда ишлатиладиган материаллар фақат маълумот бериш учун мўлжалланган.
+                    </div>
+                    <div class="footer__items__authors ">Сайтни ишлаб чикарган: <br> компания:
+                        <a href=" "><img src="./img/Sotuvchi sayt a.png " alt=" "></a>
+                    </div>
+                </div>
+            </div>
+            <div class="button-fly">
+                <a href="#header"><img src="img/UP.png" alt=""></a>
+            </div>
+            <img src="img/014-Willow-Oaka 3 (1).png" class="elem-1" alt="">
+        </footer>
+
+    </div>
+    <script src="js/scripts.min.js "></script>
+</body>
+
+</html>
