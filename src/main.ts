@@ -1,4 +1,5 @@
-import ProgressApp from '@components/ProgressApp.vue'
+import { setupApp } from '@/app'
+import App from '@/App.vue'
 
 import {
   initializeAccordion,
@@ -9,23 +10,17 @@ import {
   initializeSwiper
 } from '@utils/dom'
 
-// Detect language based on page
-const detectLanguage = (): 'ru' | 'uz' => {
-  const path = window.location.pathname
-  return path.includes('uz.html') ? 'uz' : 'ru'
-}
+// Create Vue application
+const app = createApp(App)
 
-// Wait for DOM to be ready
-document.addEventListener('DOMContentLoaded', () => {
-  // Initialize Vue app for progress section
-  const progressAppElement = document.querySelector('#progress-app')
-  if (progressAppElement) {
-    const lang = detectLanguage()
-    const app = createApp(ProgressApp, { lang })
-    app.mount('#progress-app')
-  }
+// Setup app providers (i18n, router, etc)
+setupApp(app)
 
-  // Initialize DOM utilities
+// Mount app
+app.mount('#app')
+
+// Initialize DOM utilities after Vue is mounted
+nextTick(() => {
   initializeScrollEffects()
   initializeLanguageToggle()
   initializeMobileMenu()
