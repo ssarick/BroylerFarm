@@ -1,0 +1,9 @@
+dist
+node_modules
+.git
+*.min.js
+*.min.css
+libs
+coverage
+.vscode
+.idea

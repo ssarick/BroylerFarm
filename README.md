@@ -78,6 +78,33 @@ npm run preview
 npm run type-check
 ```
 
+### Линтинг и форматирование кода
+
+Проверка и автоматическое исправление кода с помощью ESLint:
+
+```bash
+npm run lint
+```
+
+Форматирование кода с помощью Prettier:
+
+```bash
+npm run format
+```
+
+#### Правила ESLint
+
+Проект использует рекомендованные правила от команды Vue.js:
+
+- **Vue 3 recommended** - официальные правила для Vue 3
+- **TypeScript ESLint** - правила для TypeScript
+- **Evan You's style** - стиль кода от создателя Vue.js:
+  - Single quotes для строк
+  - No semicolons
+  - 2 spaces для отступов
+  - Trailing commas удалены
+  - Arrow functions предпочтительны
+
 ## Особенности реализации
 
 ### Vue 3 Composition API

@@ -1,0 +1,7 @@
+dist
+node_modules
+*.min.js
+*.min.css
+libs
+coverage
+vite.config.ts.timestamp-*
