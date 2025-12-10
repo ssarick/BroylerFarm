@@ -1,12 +1,59 @@
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import { resolve } from 'path'
+import AutoImport from 'unplugin-auto-import/vite'
+import Components from 'unplugin-vue-components/vite'
 
 export default defineConfig({
-  plugins: [vue()],
+  plugins: [
+    vue(),
+    AutoImport({
+      imports: [
+        'vue',
+        'vue-router',
+        {
+          '@vueuse/core': [
+            // named imports
+            'useMouse', // import { useMouse } from '@vueuse/core',
+            'useLocalStorage',
+            'useStorage',
+            'useDebounce',
+            'useThrottle'
+          ]
+        }
+      ],
+      dts: 'src/auto-imports.d.ts',
+      dirs: [
+        'src/composables',
+        'src/utils'
+      ],
+      vueTemplate: true,
+      eslintrc: {
+        enabled: true,
+        filepath: './.eslintrc-auto-import.json',
+        globalsPropValue: true
+      }
+    }),
+    Components({
+      dts: 'src/components.d.ts',
+      dirs: ['src/components'],
+      extensions: ['vue'],
+      deep: true,
+      resolvers: [],
+      directoryAsNamespace: false,
+      globalNamespaces: [],
+      directives: true,
+      include: [/\.vue$/, /\.vue\?vue/],
+      exclude: [/[\\/]node_modules[\\/]/, /[\\/]\.git[\\/]/, /[\\/]\.nuxt[\\/]/]
+    })
+  ],
   resolve: {
     alias: {
-      '@': resolve(__dirname, './src')
+      '@': resolve(__dirname, './src'),
+      '@components': resolve(__dirname, './src/components'),
+      '@utils': resolve(__dirname, './src/utils'),
+      '@types': resolve(__dirname, './src/types'),
+      '@assets': resolve(__dirname, './src/assets')
     }
   },
   build: {

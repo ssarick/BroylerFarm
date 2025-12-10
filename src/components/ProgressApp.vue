@@ -1,13 +1,5 @@
 <script setup lang="ts">
-import { ref, computed } from 'vue'
-
-interface YearData {
-  year: string
-  info: string
-  yearuz: string
-  infouz: string
-  value: number
-}
+import type { YearData } from '@types/index'
 
 interface Props {
   lang?: 'ru' | 'uz'

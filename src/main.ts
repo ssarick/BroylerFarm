@@ -1,6 +1,13 @@
-import { createApp } from 'vue'
-import ProgressApp from './components/ProgressApp.vue'
-import { initializeScrollEffects, initializeLanguageToggle, initializeMobileMenu, initializeAccordion, initializeSwiper, initializeSmoothScroll } from './utils/dom'
+import ProgressApp from '@components/ProgressApp.vue'
+
+import {
+  initializeAccordion,
+  initializeLanguageToggle,
+  initializeMobileMenu,
+  initializeScrollEffects,
+  initializeSmoothScroll,
+  initializeSwiper
+} from '@utils/dom'
 
 // Detect language based on page
 const detectLanguage = (): 'ru' | 'uz' => {
