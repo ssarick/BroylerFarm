@@ -7,33 +7,53 @@
 - **Vue 3** - прогрессивный JavaScript фреймворк
 - **TypeScript** - типизированный JavaScript
 - **Composition API** - современный API для Vue 3
+- **Feature-Sliced Design** - архитектурная методология
+- **Vue I18n** - интернационализация (русский/узбекский)
 - **Vite** - быстрый инструмент сборки
+- **Unplugin Auto Import** - автоматический импорт
+- **ESLint + Prettier** - качество кода
 - **Swiper** - карусель/слайдер
-- **jQuery** - для работы с DOM
 
-## Структура проекта
+## Структура проекта (FSD)
 
 ```
 BroylerFarm/
 ├── src/
-│   ├── components/       # Vue компоненты
-│   │   └── ProgressApp.vue
-│   ├── types/           # TypeScript типы
-│   │   ├── index.ts
-│   │   └── shims.d.ts
-│   ├── utils/           # Утилиты
-│   │   └── dom.ts
-│   └── main.ts          # Точка входа приложения
-├── css/                 # Стили
-├── img/                 # Изображения
-├── js/                  # Старые скрипты (deprecated)
-├── libs/                # Библиотеки (jQuery, Swiper, Vue)
-├── index.html           # Главная страница (русский)
-├── uz.html              # Узбекская версия
-├── vite.config.ts       # Конфигурация Vite
-├── tsconfig.json        # Конфигурация TypeScript
-└── package.json         # Зависимости проекта
+│   ├── app/                          # 🔧 Инициализация приложения
+│   │   ├── providers/               # i18n, router, store
+│   │   └── index.ts
+│   ├── pages/                       # 📄 Страницы
+│   │   └── home/
+│   ├── widgets/                     # 🧩 Композитные блоки
+│   │   ├── company-progress/
+│   │   ├── header/
+│   │   └── footer/
+│   ├── features/                    # ⚡ Пользовательские сценарии
+│   │   ├── language-switcher/
+│   │   └── smooth-scroll/
+│   ├── entities/                    # 💼 Бизнес-сущности
+│   │   └── company/
+│   │       ├── model/              # Логика и composables
+│   │       └── ui/                 # UI компоненты
+│   └── shared/                      # 🔗 Переиспользуемый код
+│       ├── ui/                      # UI-kit
+│       ├── lib/                     # Утилиты
+│       ├── config/                  # Конфигурация
+│       │   └── i18n/               # Локали (ru, uz)
+│       ├── api/                     # API клиент
+│       └── types/                   # Общие типы
+├── css/                             # Глобальные стили
+├── img/                             # Изображения
+├── libs/                            # Внешние библиотеки
+├── index.html                       # Главная страница
+├── uz.html                          # Узбекская версия
+├── vite.config.ts                   # Конфигурация Vite
+├── tsconfig.json                    # Конфигурация TypeScript
+├── FSD_ARCHITECTURE.md              # Документация FSD
+└── package.json                     # Зависимости
 ```
+
+> 📚 Подробнее об архитектуре читайте в [FSD_ARCHITECTURE.md](./FSD_ARCHITECTURE.md)
 
 ## Установка и запуск
 

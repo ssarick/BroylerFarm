@@ -11,10 +11,11 @@ export default defineConfig({
       imports: [
         'vue',
         'vue-router',
+        'vue-i18n',
         {
           '@vueuse/core': [
             // named imports
-            'useMouse', // import { useMouse } from '@vueuse/core',
+            'useMouse',
             'useLocalStorage',
             'useStorage',
             'useDebounce',
@@ -24,8 +25,10 @@ export default defineConfig({
       ],
       dts: 'src/auto-imports.d.ts',
       dirs: [
-        'src/composables',
-        'src/utils'
+        'src/shared/lib',
+        'src/shared/api',
+        'src/entities/*/model',
+        'src/features/*/model'
       ],
       vueTemplate: true,
       eslintrc: {
@@ -36,7 +39,12 @@ export default defineConfig({
     }),
     Components({
       dts: 'src/components.d.ts',
-      dirs: ['src/components'],
+      dirs: [
+        'src/shared/ui',
+        'src/entities/*/ui',
+        'src/features/*/ui',
+        'src/widgets/*/ui'
+      ],
       extensions: ['vue'],
       deep: true,
       resolvers: [],
