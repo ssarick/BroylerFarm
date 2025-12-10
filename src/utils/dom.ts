@@ -1,6 +1,8 @@
-import type { SwiperOptions } from '@types/index'
-
-import Swiper from '../../../libs/swiper/swiper.js'
+import Swiper from 'swiper'
+import type { SwiperOptions } from 'swiper/types'
+import 'swiper/css'
+import 'swiper/css/navigation'
+import 'swiper/css/pagination'
 
 /**
  * Initialize scroll effects for navbar

@@ -7,6 +7,9 @@ export {}
 
 declare module 'vue' {
   export interface GlobalComponents {
+    CompanyProgressWidget: typeof import('./widgets/company-progress/ui/CompanyProgressWidget.vue')['default']
     ProgressApp: typeof import('./components/ProgressApp.vue')['default']
+    RouterLink: typeof import('vue-router')['RouterLink']
+    RouterView: typeof import('vue-router')['RouterView']
   }
 }

@@ -12,6 +12,7 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
+    "swiper": "^11.0.5",
     "vue": "^3.4.21",
     "vue-i18n": "^9.9.1",
     "vue-router": "^4.2.5"
@@ -20,7 +21,7 @@
     "@vitejs/plugin-vue": "^5.0.4",
     "@typescript-eslint/eslint-plugin": "^6.21.0",
     "@typescript-eslint/parser": "^6.21.0",
-    "@vue/eslint-config-typescript": "^12.0.0",
+    "@vue/eslint-config-typescript": "^13.0.0",
     "eslint": "^8.56.0",
     "eslint-plugin-file-progress": "^3.0.2",
     "eslint-plugin-import": "^2.32.0",
